@@ -1,0 +1,15 @@
+package week5;
+
+class FancyTextGame extends TextGame {
+   FancyTextGame() {
+   }
+
+   public void displayResult(String var1) {
+      if (this.isPalindrome(var1)) {
+         System.out.println(" Hasil: \"" + var1 + "\" adalah Palindrome ");
+      } else {
+         System.out.println(" Hasil: \"" + var1 + "\" bukan Palindrome ");
+      }
+
+   }
+}
