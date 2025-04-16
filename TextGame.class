@@ -1,0 +1,21 @@
+package week5;
+
+class TextGame {
+   TextGame() {
+   }
+
+   public void displayResult(String var1) {
+      if (this.isPalindrome(var1)) {
+         System.out.println("Hasil: Palindrome");
+      } else {
+         System.out.println("Hasil: Bukan Palindrome");
+      }
+
+   }
+
+   protected boolean isPalindrome(String var1) {
+      String var2 = var1.replaceAll("\\s+", "").toLowerCase();
+      String var3 = (new StringBuilder(var2)).reverse().toString();
+      return var2.equals(var3);
+   }
+}
